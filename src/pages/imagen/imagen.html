@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>imagen</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style = "background: #38A700">
+  <img src={{imagen}}>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-input placeholder="Tipo de Arbol" [(ngModel)]="arbol"></ion-input>
+    <ion-input placeholder="Ancho de Copa" [(ngModel)]="copa"></ion-input>
+    <ion-input placeholder="Ancho de Tronco" [(ngModel)]="tronco"></ion-input>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="subirImagen()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
